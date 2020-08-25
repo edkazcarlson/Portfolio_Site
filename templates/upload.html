@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+{% block head %}
+index.html 
+{% endblock%}
+
+{% block body %}
+<div>
+    <form action = "/addProject" enctype=multipart/form-data method = "POST">
+        <input type = "text" name = "title" id = "title">
+        <input type = "text" name = "content" id = "content">
+        <input type="file" id="mainImage" name="mainImage">
+        <input type="file" id="thumb" name="thumb">
+        <input type = "submit" value = "Add Task">
+    </form>
+</div>
+{% endblock%}
